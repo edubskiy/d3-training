@@ -24,7 +24,6 @@ d3.json('menu.json').then(data => {
     .domain([0, max])
     .range([0, 500]);
 
-
   const x = d3.scaleBand()
     .domain(data.map(item => item.name))
     .range([0, 500])
